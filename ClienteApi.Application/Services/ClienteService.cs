@@ -1,0 +1,99 @@
+﻿using AutoMapper;
+using ClienteApi.Application.DTOs;
+using ClienteApi.Application.Interfaces;
+using ClienteApi.Domain.Entities;
+using ClienteApi.Domain.Interfaces;
+using ClienteApi.Domain.ValueObjects;
+
+namespace ClienteApi.Application.Services
+{
+    public class ClienteService : IClienteService
+    {
+
+        private readonly IClienteRepository _repository;
+        private readonly IMapper _mapper;
+
+        public ClienteService( IClienteRepository repository, IMapper mapper )
+        {
+            _repository = repository;
+            _mapper = mapper;
+        }
+
+        public async Task<List<ClienteDto>> GetAllAsync()
+        {
+            return _mapper.Map<List<ClienteDto>>( await _repository.GetAllAsync() );
+        }
+
+        public async Task<ClienteDto?> GetByIdAsync( Guid id )
+        {
+            var cliente = await _repository.GetByIdAsync( id );
+            return cliente == null ? null : _mapper.Map<ClienteDto>( cliente );
+        }
+
+        public async Task<ClienteDto> CreateAsync( ClienteDto clienteDto )
+        {
+            if (await _repository.GetByEmailAsync( clienteDto.Email ) is not null)
+            {
+                throw new ArgumentException( "Email já está em uso" );
+            }
+
+            var endereco = new Endereco(
+                clienteDto.Endereco.Rua,
+                clienteDto.Endereco.Numero,
+                clienteDto.Endereco.Cidade,
+                clienteDto.Endereco.Estado,
+                clienteDto.Endereco.CEP
+            );
+
+            var cliente = new Cliente(
+                clienteDto.Nome,
+                clienteDto.Email,
+                clienteDto.Telefone,
+                endereco );
+
+            await _repository.CreateAsync( cliente );
+
+            return _mapper.Map<ClienteDto>( cliente );
+
+        }
+
+        public async Task<bool> UpdateAsync( Guid id, ClienteDto clienteDto )
+        {
+            var cliente = await _repository.GetByIdAsync( id );
+            if (cliente is null)
+            {
+                return false;
+            }
+
+
+            var endereco = new Endereco(
+                clienteDto.Endereco.Rua,
+                clienteDto.Endereco.Numero,
+                clienteDto.Endereco.Cidade,
+                clienteDto.Endereco.Estado,
+                clienteDto.Endereco.CEP
+            );
+
+            cliente.Update( clienteDto.Nome, clienteDto.Email, endereco, clienteDto.Telefone );
+
+            await _repository.UpdateAsync( cliente );
+
+            return true;
+
+        }
+
+        public async Task<bool> DeleteAsync( Guid id )
+        {
+            var cliente = await _repository.GetByIdAsync( id );
+            if (cliente is null)
+            {
+                return false;
+            }
+
+            await _repository.DeleteAsync( id );
+
+            return true;
+        }
+
+    }
+}

@@ -21,5 +21,14 @@ namespace ClienteApi.Domain.Entities
             Telefone = telefone;
             Endereco = endereco;
         }
+
+        public void Update( string nome, string email, Endereco endereco, string? telefone = null )
+        {
+
+            Nome = nome;
+            Email = email;
+            Telefone = telefone;
+            Endereco = endereco;
+        }
     }
 }
