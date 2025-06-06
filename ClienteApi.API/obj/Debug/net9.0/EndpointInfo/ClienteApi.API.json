@@ -1,8 +1,9 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "ClienteApi.API",
-    "version": "1.0"
+    "title": "API para cadastro de clientes",
+    "description": "Um simples API para gerenciar clientes e seus endereços",
+    "version": "v1"
   },
   "paths": {
     "/api/v1/clientes": {

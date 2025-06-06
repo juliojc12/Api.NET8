@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57F75683-FB66-42E9-BACD-BD6135105E09}|ClienteApi.API\\ClienteApi.API.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57F75683-FB66-42E9-BACD-BD6135105E09}|ClienteApi.API\\ClienteApi.API.csproj|solutionrelative:clienteapi.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.application\\mapping\\clienteprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|solutionrelative:clienteapi.application\\mapping\\clienteprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.application\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|solutionrelative:clienteapi.application\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57F75683-FB66-42E9-BACD-BD6135105E09}|ClienteApi.API\\ClienteApi.API.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57F75683-FB66-42E9-BACD-BD6135105E09}|ClienteApi.API\\ClienteApi.API.csproj|solutionrelative:clienteapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F75683-FB66-42E9-BACD-BD6135105E09}|ClienteApi.API\\ClienteApi.API.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F75683-FB66-42E9-BACD-BD6135105E09}|ClienteApi.API\\ClienteApi.API.csproj|solutionrelative:clienteapi.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|solutionrelative:clienteapi.application\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.application\\mapping\\clienteprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|solutionrelative:clienteapi.application\\mapping\\clienteprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E14800CA-4804-47D2-AB16-DCAD7C394780}|ClienteApi.Domain\\ClienteApi.Domain.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.domain\\interfaces\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E14800CA-4804-47D2-AB16-DCAD7C394780}|ClienteApi.Domain\\ClienteApi.Domain.csproj|solutionrelative:clienteapi.domain\\interfaces\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.application\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDF9B6-F590-46F5-82D2-82455D4E527B}|ClienteApi.Application\\ClienteApi.Application.csproj|solutionrelative:clienteapi.application\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E14800CA-4804-47D2-AB16-DCAD7C394780}|ClienteApi.Domain\\ClienteApi.Domain.csproj|c:\\users\\julio\\desktop\\clienteapi\\clienteapi.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -92,26 +92,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.API\\Program.cs",
               "RelativeDocumentMoniker": "ClienteApi.API\\Program.cs",
               "ToolTip": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.API\\Program.cs",
               "RelativeToolTip": "ClienteApi.API\\Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAUwD8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwEcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T00:39:13.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.API\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "ClienteApi.API\\Controllers\\ClienteController.cs",
               "ToolTip": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.API\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "ClienteApi.API\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T00:04:40.354Z",
               "EditorCaption": ""
@@ -144,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.Domain\\Interfaces\\IClienteRepository.cs",
               "RelativeDocumentMoniker": "ClienteApi.Domain\\Interfaces\\IClienteRepository.cs",
@@ -157,20 +157,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ClienteProfile.cs",
               "DocumentMoniker": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.Application\\Mapping\\ClienteProfile.cs",
               "RelativeDocumentMoniker": "ClienteApi.Application\\Mapping\\ClienteProfile.cs",
               "ToolTip": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.Application\\Mapping\\ClienteProfile.cs",
               "RelativeToolTip": "ClienteApi.Application\\Mapping\\ClienteProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T22:55:52.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.Application\\Services\\ClienteService.cs",
               "RelativeDocumentMoniker": "ClienteApi.Application\\Services\\ClienteService.cs",
@@ -183,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IClienteService.cs",
               "DocumentMoniker": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.Application\\Interfaces\\IClienteService.cs",
               "RelativeDocumentMoniker": "ClienteApi.Application\\Interfaces\\IClienteService.cs",
@@ -209,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ClienteDto.cs",
               "DocumentMoniker": "C:\\Users\\Julio\\Desktop\\ClienteAPI\\ClienteApi.Application\\DTOs\\ClienteDto.cs",
               "RelativeDocumentMoniker": "ClienteApi.Application\\DTOs\\ClienteDto.cs",

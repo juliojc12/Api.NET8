@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using ClienteApi.Application.DTOs;
 using ClienteApi.Domain.Entities;
-using ClienteApi.Domain.ValueObjects;
 
 namespace ClienteApi.Application.Mapping
 {
@@ -9,7 +8,7 @@ namespace ClienteApi.Application.Mapping
     {
         public ClienteProfile()
         {
-            CreateMap<Endereco, EnderecoDto>().ReverseMap();
+            //CreateMap<Endereco, EnderecoDto>().ReverseMap();
             CreateMap<Cliente, ClienteDto>().ReverseMap();
 
         }

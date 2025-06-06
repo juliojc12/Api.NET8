@@ -122,3 +122,243 @@
 2025-06-06 11:18:58.781 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - null null
 2025-06-06 11:18:58.785 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
 2025-06-06 11:18:58.791 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - 499 665 image/png 10.517ms
+2025-06-06 11:18:58.906 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - null null
+2025-06-06 11:18:58.918 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.2843ms
+2025-06-06 11:19:34.944 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/api/v1/clientes - null null
+2025-06-06 11:19:34.947 -03:00 [INF] Executing endpoint 'ClienteApi.API.Controllers.ClienteController.Get (ClienteApi.API)'
+2025-06-06 11:19:34.956 -03:00 [INF] Route matched with {action = "Get", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ClienteApi.Application.DTOs.ClienteDto]]] Get() on controller ClienteApi.API.Controllers.ClienteController (ClienteApi.API).
+2025-06-06 11:19:34.960 -03:00 [INF] Buscando todos os clientes
+2025-06-06 11:19:34.970 -03:00 [INF] 0 clientes foram encontrados
+2025-06-06 11:19:34.972 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ClienteApi.Application.DTOs.ClienteDto, ClienteApi.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-06 11:19:34.974 -03:00 [INF] Executed action ClienteApi.API.Controllers.ClienteController.Get (ClienteApi.API) in 16.1585ms
+2025-06-06 11:19:34.976 -03:00 [INF] Executed endpoint 'ClienteApi.API.Controllers.ClienteController.Get (ClienteApi.API)'
+2025-06-06 11:19:34.977 -03:00 [INF] HTTP GET /api/v1/clientes responded 200 in 30.2546 ms
+2025-06-06 11:19:34.979 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/api/v1/clientes - 200 null application/json; charset=utf-8 34.6512ms
+2025-06-06 11:20:27.225 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7296/api/v1/clientes - application/json 270
+2025-06-06 11:20:27.228 -03:00 [INF] Executing endpoint 'ClienteApi.API.Controllers.ClienteController.Post (ClienteApi.API)'
+2025-06-06 11:20:27.235 -03:00 [INF] Route matched with {action = "Post", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ClienteApi.Application.DTOs.ClienteDto) on controller ClienteApi.API.Controllers.ClienteController (ClienteApi.API).
+2025-06-06 11:20:27.437 -03:00 [INF] Saved 2 entities to in-memory store.
+2025-06-06 11:20:27.445 -03:00 [INF] Cliente cadastrado com sucesso: Julio Cesar
+2025-06-06 11:20:27.446 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'ClienteApi.Application.DTOs.ClienteDto'.
+2025-06-06 11:20:27.461 -03:00 [INF] Executed action ClienteApi.API.Controllers.ClienteController.Post (ClienteApi.API) in 224.4908ms
+2025-06-06 11:20:27.462 -03:00 [INF] Executed endpoint 'ClienteApi.API.Controllers.ClienteController.Post (ClienteApi.API)'
+2025-06-06 11:20:27.463 -03:00 [INF] HTTP POST /api/v1/clientes responded 201 in 235.0317 ms
+2025-06-06 11:20:27.465 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7296/api/v1/clientes - 201 null application/json; charset=utf-8 239.3037ms
+2025-06-06 11:20:51.989 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - null null
+2025-06-06 11:20:51.993 -03:00 [INF] Executing endpoint 'ClienteApi.API.Controllers.ClienteController.GetById (ClienteApi.API)'
+2025-06-06 11:20:51.998 -03:00 [INF] Route matched with {action = "GetById", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller ClienteApi.API.Controllers.ClienteController (ClienteApi.API).
+2025-06-06 11:20:52.032 -03:00 [INF] Cliente Julio Cesar encontrado
+2025-06-06 11:20:52.033 -03:00 [INF] Executing OkObjectResult, writing value of type 'ClienteApi.Application.DTOs.ClienteDto'.
+2025-06-06 11:20:52.035 -03:00 [INF] Executed action ClienteApi.API.Controllers.ClienteController.GetById (ClienteApi.API) in 34.9017ms
+2025-06-06 11:20:52.036 -03:00 [INF] Executed endpoint 'ClienteApi.API.Controllers.ClienteController.GetById (ClienteApi.API)'
+2025-06-06 11:20:52.037 -03:00 [INF] HTTP GET /api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 responded 200 in 44.9583 ms
+2025-06-06 11:20:52.044 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - 200 null application/json; charset=utf-8 55.1867ms
+2025-06-06 11:21:31.275 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - application/json 267
+2025-06-06 11:21:31.277 -03:00 [INF] Executing endpoint 'ClienteApi.API.Controllers.ClienteController.Put (ClienteApi.API)'
+2025-06-06 11:21:31.282 -03:00 [INF] Route matched with {action = "Put", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(System.Guid, ClienteApi.Application.DTOs.ClienteDto) on controller ClienteApi.API.Controllers.ClienteController (ClienteApi.API).
+2025-06-06 11:21:31.300 -03:00 [INF] Saved 2 entities to in-memory store.
+2025-06-06 11:21:31.303 -03:00 [INF] Informações do cliente com ID "eaed6632-a500-4131-9079-e37bf9d3d9b7" atualizadas com sucesso
+2025-06-06 11:21:31.304 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-06 11:21:31.305 -03:00 [INF] Executed action ClienteApi.API.Controllers.ClienteController.Put (ClienteApi.API) in 21.6158ms
+2025-06-06 11:21:31.306 -03:00 [INF] Executed endpoint 'ClienteApi.API.Controllers.ClienteController.Put (ClienteApi.API)'
+2025-06-06 11:21:31.308 -03:00 [INF] HTTP PUT /api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 responded 204 in 30.3254 ms
+2025-06-06 11:21:31.312 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - 204 null null 36.8006ms
+2025-06-06 11:21:40.961 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - null null
+2025-06-06 11:21:40.965 -03:00 [INF] Executing endpoint 'ClienteApi.API.Controllers.ClienteController.GetById (ClienteApi.API)'
+2025-06-06 11:21:40.966 -03:00 [INF] Route matched with {action = "GetById", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller ClienteApi.API.Controllers.ClienteController (ClienteApi.API).
+2025-06-06 11:21:40.969 -03:00 [INF] Cliente Julio Cesar encontrado
+2025-06-06 11:21:40.969 -03:00 [INF] Executing OkObjectResult, writing value of type 'ClienteApi.Application.DTOs.ClienteDto'.
+2025-06-06 11:21:40.970 -03:00 [INF] Executed action ClienteApi.API.Controllers.ClienteController.GetById (ClienteApi.API) in 2.9352ms
+2025-06-06 11:21:40.972 -03:00 [INF] Executed endpoint 'ClienteApi.API.Controllers.ClienteController.GetById (ClienteApi.API)'
+2025-06-06 11:21:40.976 -03:00 [INF] HTTP GET /api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 responded 200 in 11.0833 ms
+2025-06-06 11:21:40.977 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - 200 null application/json; charset=utf-8 15.8742ms
+2025-06-06 11:21:53.844 -03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - null null
+2025-06-06 11:21:53.847 -03:00 [INF] Executing endpoint 'ClienteApi.API.Controllers.ClienteController.Delete (ClienteApi.API)'
+2025-06-06 11:21:53.851 -03:00 [INF] Route matched with {action = "Delete", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller ClienteApi.API.Controllers.ClienteController (ClienteApi.API).
+2025-06-06 11:21:53.863 -03:00 [INF] Saved 2 entities to in-memory store.
+2025-06-06 11:21:53.866 -03:00 [INF] Informações do cliente com ID "eaed6632-a500-4131-9079-e37bf9d3d9b7" excluídas com sucesso
+2025-06-06 11:21:53.867 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-06 11:21:53.868 -03:00 [INF] Executed action ClienteApi.API.Controllers.ClienteController.Delete (ClienteApi.API) in 15.131ms
+2025-06-06 11:21:53.869 -03:00 [INF] Executed endpoint 'ClienteApi.API.Controllers.ClienteController.Delete (ClienteApi.API)'
+2025-06-06 11:21:53.869 -03:00 [INF] HTTP DELETE /api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 responded 204 in 22.1751 ms
+2025-06-06 11:21:53.871 -03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7296/api/v1/clientes/eaed6632-a500-4131-9079-e37bf9d3d9b7 - 204 null null 26.9912ms
+2025-06-06 11:29:56.662 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - null null
+2025-06-06 11:29:56.676 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - 200 null text/html;charset=utf-8 13.9613ms
+2025-06-06 11:29:56.798 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:29:56.799 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:29:56.843 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 45.0057ms
+2025-06-06 11:29:56.916 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.8466ms
+2025-06-06 11:29:57.342 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - null null
+2025-06-06 11:29:57.346 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:29:57.348 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - 499 665 image/png 5.3598ms
+2025-06-06 11:29:57.494 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - null null
+2025-06-06 11:29:57.501 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.8253ms
+2025-06-06 11:30:07.212 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - null null
+2025-06-06 11:30:07.220 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - 200 null text/html;charset=utf-8 7.9971ms
+2025-06-06 11:30:07.274 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:30:07.277 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:30:07.289 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.1101ms
+2025-06-06 11:30:07.293 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.8891ms
+2025-06-06 11:30:07.412 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - null null
+2025-06-06 11:30:07.416 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:30:07.418 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - 499 665 image/png 5.9245ms
+2025-06-06 11:30:07.564 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - null null
+2025-06-06 11:30:07.582 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.1827ms
+2025-06-06 11:30:19.308 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - null null
+2025-06-06 11:30:19.316 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - 200 null text/html;charset=utf-8 7.5116ms
+2025-06-06 11:30:19.391 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:30:19.391 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:30:19.407 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 16.6176ms
+2025-06-06 11:30:19.424 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.7196ms
+2025-06-06 11:30:19.579 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - null null
+2025-06-06 11:30:19.585 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:30:19.590 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - 499 665 image/png 10.6661ms
+2025-06-06 11:30:19.713 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - null null
+2025-06-06 11:30:19.720 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.6505ms
+2025-06-06 11:30:43.698 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - null null
+2025-06-06 11:30:43.702 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - 200 null text/html;charset=utf-8 3.7879ms
+2025-06-06 11:30:43.780 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:30:43.781 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:30:43.802 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 20.7981ms
+2025-06-06 11:30:43.803 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.5083ms
+2025-06-06 11:30:43.930 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - null null
+2025-06-06 11:30:43.934 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:30:43.936 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/favicon-16x16.png - 499 665 image/png 6.3035ms
+2025-06-06 11:30:44.046 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - null null
+2025-06-06 11:30:44.052 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.3747ms
+2025-06-06 11:32:58.815 -03:00 [INF] Now listening on: https://localhost:7296
+2025-06-06 11:32:58.856 -03:00 [INF] Now listening on: http://localhost:5213
+2025-06-06 11:32:58.956 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 11:32:59.083 -03:00 [INF] Hosting environment: Development
+2025-06-06 11:32:59.084 -03:00 [INF] Content root path: C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API
+2025-06-06 11:33:09.851 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/index.html - null null
+2025-06-06 11:33:09.992 -03:00 [INF] HTTP GET /swagger/index.html responded 404 in 1.6864 ms
+2025-06-06 11:33:10.000 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/index.html - 404 0 null 153.4156ms
+2025-06-06 11:33:10.007 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7296/swagger/index.html, Response status code: 404
+2025-06-06 11:33:14.419 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/ - null null
+2025-06-06 11:33:14.426 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/ - 301 0 null 7.3831ms
+2025-06-06 11:33:14.435 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.html - null null
+2025-06-06 11:33:14.515 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.html - 200 null text/html;charset=utf-8 79.5764ms
+2025-06-06 11:33:14.557 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger-ui.css - null null
+2025-06-06 11:33:14.557 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger-ui-bundle.js - null null
+2025-06-06 11:33:14.557 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.css - null null
+2025-06-06 11:33:14.597 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger-ui-standalone-preset.js - null null
+2025-06-06 11:33:14.597 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.js - null null
+2025-06-06 11:33:14.607 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-06-06 11:33:14.608 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.js - 200 null application/javascript;charset=utf-8 10.9316ms
+2025-06-06 11:33:14.611 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.css - 200 202 text/css 53.7597ms
+2025-06-06 11:33:14.614 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:33:14.614 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:33:14.633 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 18.2724ms
+2025-06-06 11:33:14.637 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-06 11:33:14.644 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-06 11:33:14.656 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger-ui.css - 200 154949 text/css 99.0373ms
+2025-06-06 11:33:14.672 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-06 11:33:14.702 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger-ui-bundle.js - 200 1484234 text/javascript 145.001ms
+2025-06-06 11:33:14.686 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger-ui-standalone-preset.js - 200 229223 text/javascript 88.89ms
+2025-06-06 11:33:14.726 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.8963ms
+2025-06-06 11:33:14.879 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/favicon-16x16.png - null null
+2025-06-06 11:33:14.882 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:33:14.887 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/favicon-16x16.png - 200 665 image/png 8.1269ms
+2025-06-06 11:33:14.996 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/v1/swagger.json - null null
+2025-06-06 11:33:15.002 -03:00 [INF] HTTP GET /v1/swagger.json responded 404 in 0.1215 ms
+2025-06-06 11:33:15.004 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/v1/swagger.json - 404 0 null 8.0079ms
+2025-06-06 11:33:15.008 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7296/v1/swagger.json, Response status code: 404
+2025-06-06 11:34:18.817 -03:00 [INF] Now listening on: https://localhost:7296
+2025-06-06 11:34:18.865 -03:00 [INF] Now listening on: http://localhost:5213
+2025-06-06 11:34:18.949 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 11:34:18.951 -03:00 [INF] Hosting environment: Development
+2025-06-06 11:34:18.952 -03:00 [INF] Content root path: C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API
+2025-06-06 11:34:36.158 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/ - null null
+2025-06-06 11:34:36.303 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/ - 301 0 null 150.0813ms
+2025-06-06 11:34:36.338 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.html - null null
+2025-06-06 11:34:36.404 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:34:36.406 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:34:36.466 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 61.7304ms
+2025-06-06 11:34:36.501 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.9736ms
+2025-06-06 11:34:36.508 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.html - 200 null text/html;charset=utf-8 169.6203ms
+2025-06-06 11:34:36.600 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/favicon-16x16.png - null null
+2025-06-06 11:34:36.620 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:34:36.622 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/favicon-16x16.png - 499 665 image/png 21.607ms
+2025-06-06 11:34:36.702 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/v1/swagger.json - null null
+2025-06-06 11:34:36.714 -03:00 [INF] HTTP GET /v1/swagger.json responded 404 in 2.1117 ms
+2025-06-06 11:34:36.722 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/v1/swagger.json - 404 0 null 19.9024ms
+2025-06-06 11:34:36.727 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7296/v1/swagger.json, Response status code: 404
+2025-06-06 11:34:49.485 -03:00 [INF] Now listening on: https://localhost:7296
+2025-06-06 11:34:49.551 -03:00 [INF] Now listening on: http://localhost:5213
+2025-06-06 11:34:49.704 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 11:34:49.726 -03:00 [INF] Hosting environment: Development
+2025-06-06 11:34:49.727 -03:00 [INF] Content root path: C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API
+2025-06-06 11:36:12.735 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/ - null null
+2025-06-06 11:36:12.864 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/ - 301 0 null 133.4953ms
+2025-06-06 11:36:12.961 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:36:12.973 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:36:13.031 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 58.9461ms
+2025-06-06 11:36:13.058 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.0685ms
+2025-06-06 11:36:13.275 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/v1/swagger.json - null null
+2025-06-06 11:36:13.294 -03:00 [INF] HTTP GET /v1/swagger.json responded 404 in 2.0669 ms
+2025-06-06 11:36:13.301 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/v1/swagger.json - 404 0 null 26.4991ms
+2025-06-06 11:36:13.320 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7296/v1/swagger.json, Response status code: 404
+2025-06-06 11:37:27.989 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/ - null null
+2025-06-06 11:37:28.019 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/ - 301 0 null 30.5249ms
+2025-06-06 11:37:28.102 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:37:28.103 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:37:28.144 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 40.4209ms
+2025-06-06 11:37:28.161 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.414ms
+2025-06-06 11:37:28.291 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/favicon-16x16.png - null null
+2025-06-06 11:37:28.315 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:37:28.318 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/favicon-16x16.png - 499 665 image/png 27.1531ms
+2025-06-06 11:37:28.392 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/v1/swagger.json - null null
+2025-06-06 11:37:28.397 -03:00 [INF] HTTP GET /v1/swagger.json responded 404 in 0.1721 ms
+2025-06-06 11:37:28.406 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/v1/swagger.json - 404 0 null 13.816ms
+2025-06-06 11:37:28.413 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7296/v1/swagger.json, Response status code: 404
+2025-06-06 11:39:04.656 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/ - null null
+2025-06-06 11:39:04.672 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/ - 301 0 null 15.7073ms
+2025-06-06 11:39:04.693 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.html - null null
+2025-06-06 11:39:04.779 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.html - 200 null text/html;charset=utf-8 86.3746ms
+2025-06-06 11:39:04.836 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger-ui.css - null null
+2025-06-06 11:39:04.837 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.css - null null
+2025-06-06 11:39:04.837 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger-ui-bundle.js - null null
+2025-06-06 11:39:04.838 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger-ui-standalone-preset.js - null null
+2025-06-06 11:39:04.844 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-06-06 11:39:04.852 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.js - null null
+2025-06-06 11:39:04.852 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:39:04.854 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:39:04.857 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.css - 200 202 text/css 19.763ms
+2025-06-06 11:39:04.861 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.js - 200 null application/javascript;charset=utf-8 8.3788ms
+2025-06-06 11:39:04.882 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 27.8828ms
+2025-06-06 11:39:04.890 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-06 11:39:04.891 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-06 11:39:04.905 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.054ms
+2025-06-06 11:39:04.909 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger-ui.css - 200 154949 text/css 72.5ms
+2025-06-06 11:39:04.909 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger-ui-standalone-preset.js - 200 229223 text/javascript 71.2119ms
+2025-06-06 11:39:04.917 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-06 11:39:04.925 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger-ui-bundle.js - 200 1484234 text/javascript 87.6265ms
+2025-06-06 11:39:05.115 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/favicon-16x16.png - null null
+2025-06-06 11:39:05.117 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-06 11:39:05.123 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/favicon-16x16.png - 200 665 image/png 8.2344ms
+2025-06-06 11:39:05.178 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - null null
+2025-06-06 11:39:05.217 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.7977ms
+2025-06-06 11:39:57.877 -03:00 [INF] Now listening on: https://localhost:7296
+2025-06-06 11:39:57.917 -03:00 [INF] Now listening on: http://localhost:5213
+2025-06-06 11:39:57.966 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 11:39:57.968 -03:00 [INF] Hosting environment: Development
+2025-06-06 11:39:57.969 -03:00 [INF] Content root path: C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API
+2025-06-06 11:40:03.694 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/index.html - null null
+2025-06-06 11:40:03.877 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/index.html - 200 null text/html;charset=utf-8 186.5805ms
+2025-06-06 11:40:03.917 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_vs/browserLink - null null
+2025-06-06 11:40:03.917 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:40:03.937 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 19.6022ms
+2025-06-06 11:40:03.968 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.7356ms
+2025-06-06 11:40:04.130 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - null null
+2025-06-06 11:40:04.150 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5599ms
+2025-06-06 11:40:13.582 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7296/api/v1/clientes - null null
+2025-06-06 11:40:13.594 -03:00 [INF] Executing endpoint 'ClienteApi.API.Controllers.ClienteController.Get (ClienteApi.API)'
+2025-06-06 11:40:13.613 -03:00 [INF] Route matched with {action = "Get", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ClienteApi.Application.DTOs.ClienteDto]]] Get() on controller ClienteApi.API.Controllers.ClienteController (ClienteApi.API).
+2025-06-06 11:40:13.801 -03:00 [INF] Buscando todos os clientes
+2025-06-06 11:40:14.460 -03:00 [INF] 0 clientes foram encontrados
+2025-06-06 11:40:14.467 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ClienteApi.Application.DTOs.ClienteDto, ClienteApi.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-06 11:40:14.481 -03:00 [INF] Executed action ClienteApi.API.Controllers.ClienteController.Get (ClienteApi.API) in 862.7621ms
+2025-06-06 11:40:14.483 -03:00 [INF] Executed endpoint 'ClienteApi.API.Controllers.ClienteController.Get (ClienteApi.API)'
+2025-06-06 11:40:14.485 -03:00 [INF] HTTP GET /api/v1/clientes responded 200 in 895.1028 ms
+2025-06-06 11:40:14.491 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7296/api/v1/clientes - 200 null application/json; charset=utf-8 909.5325ms
