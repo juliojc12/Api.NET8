@@ -32,7 +32,7 @@
 
 ## Pré-requisítos
 
-- [.NET 8](https://dotnet.microsoft.com/download)
+- [.NET 9](https://dotnet.microsoft.com/download)
 
 ##  Como executar o Projeto
 ##### 1. Restaurar dependencias
