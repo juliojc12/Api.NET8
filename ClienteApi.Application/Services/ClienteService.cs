@@ -32,10 +32,13 @@ namespace ClienteApi.Application.Services
 
         public async Task<ClienteDto> CreateAsync( ClienteDto clienteDto )
         {
-            if (await _repository.GetByEmailAsync( clienteDto.Email ) is not null)
+            var verificarEmail = await _repository.GetByEmailAsync( clienteDto.Email );
+
+            if (verificarEmail != null)
             {
-                throw new ArgumentException( "Email já está em uso" );
+                throw new InvalidOperationException( "Email em uso." );
             }
+
 
             var endereco = new Endereco(
                 clienteDto.Endereco.Rua,
@@ -57,14 +60,22 @@ namespace ClienteApi.Application.Services
 
         }
 
-        public async Task<bool> UpdateAsync( Guid id, ClienteDto clienteDto )
+        public async Task<ClienteDto> UpdateAsync( Guid id, ClienteDto clienteDto )
         {
             var cliente = await _repository.GetByIdAsync( id );
-            if (cliente is null)
+            if (cliente == null)
             {
-                return false;
+                throw new ArgumentException( "Cliente não encontrado." );
             }
 
+            if (clienteDto.Email != cliente.Email)
+            {
+                var verificarEmail = await _repository.GetByEmailAsync( clienteDto.Email );
+                if (verificarEmail != null)
+                {
+                    throw new InvalidOperationException( "Este email já encrontra-se em uso." );
+                }
+            }
 
             var endereco = new Endereco(
                 clienteDto.Endereco.Rua,
@@ -77,9 +88,7 @@ namespace ClienteApi.Application.Services
             cliente.Update( clienteDto.Nome, clienteDto.Email, endereco, clienteDto.Telefone );
 
             await _repository.UpdateAsync( cliente );
-
-            return true;
-
+            return _mapper.Map<ClienteDto>( cliente );
         }
 
         public async Task<bool> DeleteAsync( Guid id )

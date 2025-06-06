@@ -12,6 +12,7 @@ namespace ClienteApi.Domain.Entities
         public string? Telefone { get; private set; }
         public Endereco Endereco { get; private set; }
 
+        public Cliente() { } // Parameterless constructor for EF Core
 
         public Cliente( string nome, string email, string? telefone, Endereco endereco )
         {

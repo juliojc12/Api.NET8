@@ -7,7 +7,7 @@ namespace ClienteApi.Application.Interfaces
         Task<List<ClienteDto>> GetAllAsync();
         Task<ClienteDto?> GetByIdAsync( Guid id );
         Task<ClienteDto> CreateAsync( ClienteDto clienteDto );
-        Task<bool> UpdateAsync( Guid id, ClienteDto clienteDto );
+        Task<ClienteDto> UpdateAsync( Guid id, ClienteDto clienteDto );
         Task<bool> DeleteAsync( Guid id );
     }
 }

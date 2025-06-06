@@ -1,0 +1,11 @@
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\bin\Debug\net9.0\ClienteApi.Domain.deps.json
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\bin\Debug\net9.0\ClienteApi.Domain.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\bin\Debug\net9.0\ClienteApi.Domain.pdb
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.AssemblyInfoInputs.cache
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.AssemblyInfo.cs
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\refint\ClienteApi.Domain.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.pdb
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ref\ClienteApi.Domain.dll

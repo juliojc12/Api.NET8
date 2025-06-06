@@ -9,10 +9,9 @@ namespace ClienteApi.Application.Mapping
     {
         public ClienteProfile()
         {
-
             CreateMap<Endereco, EnderecoDto>().ReverseMap();
-
             CreateMap<Cliente, ClienteDto>().ReverseMap();
+
         }
 
     }
