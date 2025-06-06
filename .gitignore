@@ -1,20 +1,45 @@
+# Arquivos de build gerados
 bin/
 obj/
-.vscode/
-.vs/
-Publish/
-.config/
-.nuget/
-.temp/
 
+# Pacotes
+packages/
+*.nupkg
+.vs/
+.vspscc
 .suo
 .user
 .log
+*.opensdf
+*.sdf
+*.vsscc
+*.vssettings
+*.csproj.user
+*.resharper
+*.resharper.user
+*.resharper.dotSettings
+*.resharper.dotSettings.user
+*.dotsettings
+*.dotsettings.user
+*.userprefs
 
+# Cache do ReSharper
+*.TeamCity.dotSettings
+*.TeamCity.dotSettings.user
+
+# Arquivos de ferramentas de build (ex: MSBuild)
+*.cache
+*.fs.cache
+
+# Configurações do Visual Studio Code
+.vscode/
+
+# Arquivos de banco de dados (ex: SQLite)
 *.db
 *.sqlite
 *.sqlite3
 
+# Arquivos de log e depuração
 *.log
 *.pfx
 *.bak
@@ -24,3 +49,32 @@ Publish/
 *.ldf
 *.mdf
 
+# Diretórios de publicação
+Publish/
+
+# Certificados de desenvolvimento
+*.pfx
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Mac OS
+.DS_Store
+
+# Linha de comando dotnet
+.config/
+.nuget/
+.temp/
+
+# Arquivos de usuário do Rider (JetBrains IDE)
+.idea/
+
+# Arquivos de cobertura de código
+*.trx
+*.coverage
+*.coveragexml
+
+# Outros
+Thumbs.db
+Desktop.ini
