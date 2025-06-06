@@ -3,11 +3,13 @@ obj/
 .vscode/
 .vs/
 Publish/
+.config/
+.nuget/
+.temp/
 
 .suo
 .user
 .log
-
 
 *.db
 *.sqlite

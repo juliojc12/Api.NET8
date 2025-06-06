@@ -5,6 +5,21 @@ using ClienteApi.Domain.Interfaces;
 using ClienteApi.Infrastructure.Data;
 using ClienteApi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File( "logs/log-.txt", rollingInterval: RollingInterval.Day )
+    .MinimumLevel.Information()
+    .Enrich.FromLogContext()
+    .Enrich.WithMachineName()
+    .Enrich.WithProcessId()
+    .CreateBootstrapLogger();
+
+
+
+
 
 var builder = WebApplication.CreateBuilder( args );
 
@@ -28,6 +43,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 
 }
+
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
