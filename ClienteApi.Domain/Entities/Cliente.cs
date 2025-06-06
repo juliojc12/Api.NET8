@@ -5,18 +5,17 @@ namespace ClienteApi.Domain.Entities
 
     public class Cliente
     {
-
         public Guid Id { get; private set; }
         public string Nome { get; private set; }
         public Email Email { get; private set; }
         public string? Telefone { get; private set; }
         public Endereco Endereco { get; private set; }
 
-        public Cliente() { } // Parameterless constructor for EF Core
+        public Cliente() { }
 
-        public Cliente( string nome, Email email, string? telefone, Endereco endereco )
+        public Cliente( Guid id, string nome, Email email, string? telefone, Endereco endereco )
         {
-            Id = Guid.NewGuid();
+            Id = id;
             Nome = nome;
             Email = email;
             Telefone = telefone;

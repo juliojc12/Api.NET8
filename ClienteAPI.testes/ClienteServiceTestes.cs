@@ -41,6 +41,7 @@ namespace ClienteAPI.testes
             var clientes = new List<Cliente>
             {
                 new Cliente(
+                    Guid.NewGuid(),
                     "Sergio",
                     new Email("sergio@email.com"),
                     "1212312312",
@@ -48,6 +49,7 @@ namespace ClienteAPI.testes
                     ),
 
                 new Cliente(
+                    Guid.NewGuid(),
                     "Andre",
                     new Email("andre@email.com"),
                     "1212312312",
@@ -67,6 +69,26 @@ namespace ClienteAPI.testes
             Assert.Equal( 2, result.Count() );
 
             _mock.Verify( repo => repo.GetAllAsync(), Times.Once );
+
+        }
+
+
+        [Fact]
+        public async Task GetClienteByIdAsync_ReturnCliente()
+        {
+            var clienteId = Guid.NewGuid();
+            var cliente = new Cliente( clienteId, "João Silva", new Email( "joao.silva@example.com" ), "11987654321", new Endereco( "Rua A", "123", "São Paulo", "SP", "01000-000" ) );
+
+            _mock.Setup( repo => repo.GetByIdAsync( clienteId ) ).ReturnsAsync( cliente );
+
+            // Act
+            var resultado = await _clienteService.GetByIdAsync( clienteId );
+
+            Assert.NotNull( resultado );
+            Assert.Equal( clienteId, resultado.Id );
+            Assert.Equal( "João Silva", resultado.Nome );
+
+            _mock.Verify( repo => repo.GetByIdAsync( clienteId ), Times.Once );
 
         }
     }

@@ -64,6 +64,7 @@ namespace ClienteApi.Application.Services
             );
 
             var cliente = new Cliente(
+                clienteDto.Id,
                 clienteDto.Nome,
                 email,
                 clienteDto.Telefone,
