@@ -28,7 +28,7 @@
     Implementa os repositórios, o DbContext com EF Core (In-Memory) e a persistência de dados.
 
 **Program.cs:**
-    Ponto de entrada da aplicação, responsável pela configuração dos middlewares, injeção de dependência e execução do seed.
+    Ponto de entrada da aplicação, responsável pela configuração dos middlewares, injeção de dependência.
 
 ## Pré-requisítos
 
