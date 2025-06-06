@@ -98,9 +98,7 @@ namespace ClienteApi.Application.Services
                 throw new ArgumentException( ex.Message, nameof( clienteDto.Email ) );
             }
 
-
-
-            if (novoEmail != cliente.Email)
+            if (novoEmail.Value != cliente.Email.Value)
             {
                 var verificarEmail = await _repository.GetByEmailAsync( cliente.Email );
                 if (verificarEmail != null)
