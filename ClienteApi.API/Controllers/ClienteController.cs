@@ -11,7 +11,6 @@ namespace ClienteApi.API.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly IClienteService _service;
-
         private readonly ILogger<ClienteController> _logger;
 
         public ClienteController( IClienteService service, ILogger<ClienteController> logger )
@@ -21,9 +20,13 @@ namespace ClienteApi.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<ActionResult<IEnumerable<ClienteDto>>> Get()
         {
-            return Ok( await _service.GetAllAsync() );
+            _logger.LogInformation( "Buscando todos os clientes" );
+            var clientes = await _service.GetAllAsync();
+
+            _logger.LogInformation( "{Count} clientes foram encontrados", clientes.Count() );
+            return Ok( clientes );
         }
 
         [HttpGet( "{id}" )]
@@ -33,10 +36,11 @@ namespace ClienteApi.API.Controllers
 
             if (cliente == null)
             {
-                _logger.LogError( "Cliente não encontrado" );
+                _logger.LogError( "Cliente com ID {Id} não encontrado", id );
                 return NotFound();
             }
 
+            _logger.LogInformation( "Cliente {Nome} encontrado", cliente.Nome );
             return Ok( cliente );
         }
 
@@ -46,15 +50,16 @@ namespace ClienteApi.API.Controllers
             try
             {
                 var cliente = await _service.CreateAsync( dto );
+
+                _logger.LogInformation( "Cliente cadastrado com sucesso: {Nome}", dto.Nome );
                 return CreatedAtAction( nameof( GetById ), new { id = dto.Id }, cliente );
             }
             catch (ArgumentException error)
             {
-                _logger.LogError( error.Message );
+                _logger.LogError( "Um erro inesperado aconteceu: {Message}", error.Message );
                 return Conflict( new { message = error.Message } );
             }
         }
-
 
         [HttpPut( "{id}" )]
         public async Task<IActionResult> Put( Guid id, [FromBody] ClienteDto dto )
@@ -63,9 +68,11 @@ namespace ClienteApi.API.Controllers
 
             if (cliente == null)
             {
+                _logger.LogError( "Cliente com ID {Id} não encontrado", id );
                 return NotFound();
             }
-            _logger.LogInformation( "Informações atualizadas com sucesso." );
+
+            _logger.LogInformation( "Informações do cliente com ID {Id} atualizadas com sucesso", id );
             return NoContent();
         }
 
@@ -74,11 +81,13 @@ namespace ClienteApi.API.Controllers
         {
             var cliente = await _service.DeleteAsync( id );
 
-            if (cliente == null)
+            if (!cliente)
             {
+                _logger.LogError( "Cliente com ID {Id} não encontrado", id );
                 return NotFound();
             }
-            _logger.LogInformation( "Informações excluídas com sucesso." );
+
+            _logger.LogInformation( "Informações do cliente com ID {Id} excluídas com sucesso", id );
             return NoContent();
         }
     }

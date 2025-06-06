@@ -48,3 +48,16 @@ C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\refint\Cliente
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\ClienteApi.API.pdb
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\ClienteApi.API.genruntimeconfig.cache
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\ref\ClienteApi.API.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.AspNetCore.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Enrichers.Environment.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Enrichers.Process.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Sinks.File.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\ClienteApi.API.sourcelink.json

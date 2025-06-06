@@ -23,6 +23,19 @@ Log.Logger = new LoggerConfiguration()
 
 var builder = WebApplication.CreateBuilder( args );
 
+
+builder.Host.UseSerilog( ( context, services, configuration ) =>
+    configuration
+        .ReadFrom.Configuration( context.Configuration )
+        .ReadFrom.Services( services )
+        .WriteTo.Console()
+        .WriteTo.File( "logs/log-.txt", rollingInterval: RollingInterval.Day )
+        .MinimumLevel.Information()
+        .Enrich.FromLogContext()
+        .Enrich.WithMachineName()
+        .Enrich.WithProcessId()
+);
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
