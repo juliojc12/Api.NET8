@@ -13,3 +13,4 @@ C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Infrastructure\obj\Debug\net9.0\Cli
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Infrastructure\obj\Debug\net9.0\refint\ClienteApi.Infrastructure.dll
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Infrastructure\obj\Debug\net9.0\ClienteApi.Infrastructure.pdb
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Infrastructure\obj\Debug\net9.0\ref\ClienteApi.Infrastructure.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Infrastructure\obj\Debug\net9.0\ClienteApi.Infrastructure.sourcelink.json

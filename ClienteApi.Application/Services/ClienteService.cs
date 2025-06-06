@@ -32,7 +32,22 @@ namespace ClienteApi.Application.Services
 
         public async Task<ClienteDto> CreateAsync( ClienteDto clienteDto )
         {
-            var verificarEmail = await _repository.GetByEmailAsync( clienteDto.Email );
+            Email email;
+
+            try
+            {
+                email = new Email( clienteDto.Email );
+            }
+            catch (FormatException ex)
+            {
+                throw new ArgumentException( ex.Message, nameof( clienteDto.Email ) );
+            }
+            catch (ArgumentException ex)
+            {
+                throw new ArgumentException( ex.Message, nameof( clienteDto.Email ) );
+            }
+
+            var verificarEmail = await _repository.GetByEmailAsync( email );
 
             if (verificarEmail != null)
             {
@@ -50,7 +65,7 @@ namespace ClienteApi.Application.Services
 
             var cliente = new Cliente(
                 clienteDto.Nome,
-                clienteDto.Email,
+                email,
                 clienteDto.Telefone,
                 endereco );
 
@@ -68,9 +83,26 @@ namespace ClienteApi.Application.Services
                 throw new ArgumentException( "Cliente não encontrado." );
             }
 
-            if (clienteDto.Email != cliente.Email)
+            Email novoEmail;
+
+            try
             {
-                var verificarEmail = await _repository.GetByEmailAsync( clienteDto.Email );
+                novoEmail = new Email( clienteDto.Email );
+            }
+            catch (FormatException ex)
+            {
+                throw new ArgumentException( ex.Message, nameof( clienteDto.Email ) );
+            }
+            catch (ArgumentException ex) // Para emails nulos/vazios
+            {
+                throw new ArgumentException( ex.Message, nameof( clienteDto.Email ) );
+            }
+
+
+
+            if (novoEmail != cliente.Email)
+            {
+                var verificarEmail = await _repository.GetByEmailAsync( cliente.Email );
                 if (verificarEmail != null)
                 {
                     throw new InvalidOperationException( "Este email já encrontra-se em uso." );
@@ -85,7 +117,7 @@ namespace ClienteApi.Application.Services
                 clienteDto.Endereco.CEP
             );
 
-            cliente.Update( clienteDto.Nome, clienteDto.Email, endereco, clienteDto.Telefone );
+            cliente.Update( clienteDto.Nome, novoEmail, endereco, clienteDto.Telefone );
 
             await _repository.UpdateAsync( cliente );
             return _mapper.Map<ClienteDto>( cliente );

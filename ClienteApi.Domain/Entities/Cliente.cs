@@ -8,13 +8,13 @@ namespace ClienteApi.Domain.Entities
 
         public Guid Id { get; private set; }
         public string Nome { get; private set; }
-        public string Email { get; private set; }
+        public Email Email { get; private set; }
         public string? Telefone { get; private set; }
         public Endereco Endereco { get; private set; }
 
         public Cliente() { } // Parameterless constructor for EF Core
 
-        public Cliente( string nome, string email, string? telefone, Endereco endereco )
+        public Cliente( string nome, Email email, string? telefone, Endereco endereco )
         {
             Id = Guid.NewGuid();
             Nome = nome;
@@ -23,7 +23,7 @@ namespace ClienteApi.Domain.Entities
             Endereco = endereco;
         }
 
-        public void Update( string nome, string email, Endereco endereco, string? telefone = null )
+        public void Update( string nome, Email email, Endereco endereco, string? telefone = null )
         {
 
             Nome = nome;

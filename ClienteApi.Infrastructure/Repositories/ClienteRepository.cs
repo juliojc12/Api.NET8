@@ -1,5 +1,6 @@
 ﻿using ClienteApi.Domain.Entities;
 using ClienteApi.Domain.Interfaces;
+using ClienteApi.Domain.ValueObjects;
 using ClienteApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,9 +25,9 @@ public class ClienteRepository : IClienteRepository
         return await _context.Clientes.FindAsync( id );
     }
 
-    public async Task<Cliente?> GetByEmailAsync( string email )
+    public async Task<Cliente?> GetByEmailAsync( Email email )
     {
-        return await _context.Clientes.FirstOrDefaultAsync( c => c.Email == email );
+        return await _context.Clientes.FirstOrDefaultAsync( c => c.Email.Value == email.Value );
     }
 
     public async Task CreateAsync( Cliente cliente )

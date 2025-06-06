@@ -41,7 +41,6 @@ C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\staticwebasset
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\ClienteA.C7FDC616.Up2Date
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\ClienteApi.API.dll
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\refint\ClienteApi.API.dll
@@ -61,3 +60,4 @@ C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Sinks.
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\bin\Debug\net9.0\Serilog.Sinks.File.dll
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\ClienteApi.API.sourcelink.json
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

@@ -15,11 +15,22 @@ namespace ClienteApi.Infrastructure.Data
         protected override void OnModelCreating( ModelBuilder modelBuilder )
         {
 
-            modelBuilder.Entity<Cliente>( e =>
+            modelBuilder.Entity<Cliente>( entity =>
             {
-                e.HasKey( c => c.Id );
-                e.OwnsOne( c => c.Endereco );
-                e.HasIndex( c => c.Email ).IsUnique();
+                entity.HasKey( c => c.Id );
+                entity.Property( c => c.Nome )
+                      .IsRequired()
+                      .HasMaxLength( 250 );
+                entity.Property( c => c.Telefone )
+                      .HasMaxLength( 50 );
+
+                entity.OwnsOne( c => c.Email, email =>
+                {
+                    email.HasIndex( e => e.Value )
+                         .IsUnique();
+                } );
+
+                entity.OwnsOne( c => c.Endereco );
             } );
         }
     }

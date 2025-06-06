@@ -1,4 +1,5 @@
 ﻿using ClienteApi.Domain.Entities;
+using ClienteApi.Domain.ValueObjects;
 
 namespace ClienteApi.Domain.Interfaces
 {
@@ -7,7 +8,7 @@ namespace ClienteApi.Domain.Interfaces
 
         Task<List<Cliente>> GetAllAsync();
         Task<Cliente?> GetByIdAsync( Guid id );
-        Task<Cliente?> GetByEmailAsync( string email );
+        Task<Cliente?> GetByEmailAsync( Email email );
         Task CreateAsync( Cliente cliente );
         Task UpdateAsync( Cliente cliente );
         Task DeleteAsync( Guid id );

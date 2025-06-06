@@ -9,3 +9,4 @@ C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\refint\ClienteApi.Domain.dll
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.pdb
 C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ref\ClienteApi.Domain.dll
+C:\Users\Julio\Desktop\ClienteAPI\ClienteApi.Domain\obj\Debug\net9.0\ClienteApi.Domain.sourcelink.json
